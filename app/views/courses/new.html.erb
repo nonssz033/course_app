@@ -1,0 +1,21 @@
+<h2>新增課程</h2>
+<%= form_for @course do|f|%>
+
+	<div>
+	課程名稱
+		<%=f.text_field :name %>
+	</div>
+	
+	<div>
+	授課老師
+		<%=f.text_field :teacher %>
+	</div>
+
+	<div>
+	上課時間
+	<%=f.text_field :time %>
+	</div>
+
+	<%=f.submit%>
+
+	<%end%>
